@@ -1,0 +1,233 @@
+.container{
+    display:grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 5fr;
+    min-height: 100%;
+    min-width: 100%;
+    width: 100%;
+}
+.searchContainer{
+    flex-grow: 1;
+    gap: 1rem;
+}
+.mainColumn{
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+}
+.firstActionRow{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+.rightSide{
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-family: 'Roboto';
+    font-weight: 500;
+}
+.firstActionRow > div{
+    display: flex;
+    align-items: center;
+    
+}
+.searchBar{
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    height: 1.7rem;
+    flex-grow: 1;
+    max-width: 800px;
+    background-color: rgb(230, 230, 230);
+}
+.actionsContainer{
+    grid-row: 1/2;
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+
+}
+
+.secondActionRow{
+    display: flex;
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.rightSideSecondRow{
+    margin-right: 2rem;
+    display: flex;
+    gap:2rem
+}
+
+.secondActionRow > img {
+    align-self: flex-start;
+}
+
+.blueButton{
+    background-color: #1992D4;
+    padding-left: 2rem;
+    padding-right:2rem;
+    padding-top: 0.5rem;
+    padding-bottom:0.5rem;
+    border-radius: 15px;
+    color: white;
+    font-family: Roboto;
+    font-weight:500;
+    border: 1px solid #1992D4;
+    font-size: 1rem;
+}
+.textSecondRow{
+    margin-bottom: 0px;
+    margin-left: 1rem;
+    font-family: Roboto;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    align-self: center;
+}
+.textSecondRow > p {
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+.leftSideSecondRow{
+    display: flex;
+}
+.bigText{
+    font-size: 1.5rem;
+    margin-top: 0px;
+    font-family: Roboto;
+}
+
+.content >  div >p{
+    margin-left: 2rem;
+    margin-top:2rem;
+    font-weight: 500;
+}
+
+.secondActionRow > img{
+    height: 100%;
+}
+
+.logo{
+    max-height: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-family: Roboto;
+    font-weight: 700;
+    
+}
+.logo > img {
+    height: 70px;
+    width: 70px;
+}
+.logo > p {
+    color: white;
+}
+.sidebar{
+    grid-column: 1/2;
+    padding-right: 1rem;
+    grid-row: 1/3;
+    display: grid;
+    align-items: start;
+    grid-template-rows: 1fr 3fr 3fr;
+    padding-left: 0.1rem;
+    background-color: #1992D4;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+}
+*{
+    box-sizing: border-box;
+}
+
+
+.upperList > ul,.lowerList > ul{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 0px;
+    list-style: none;
+}
+
+
+.upperList > ul > div > img , .lowerList > ul > div > img {
+    height: 30px;
+    width: 30px;
+    margin-right: 1rem;
+    color: #FFFFFF;
+}
+
+.sidebarItemContainer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px;
+    text-align: start;
+    font-family: Roboto;
+    font-weight: 500;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+    color: #FFFFFF;
+}
+
+.content{
+    gap: 1.5rem;
+    background-color: #E2E8F0;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+
+.projectsColumn{
+    display: grid;
+    grid-template-rows: 10% 90%;
+    grid-template-columns: auto;
+    padding-left: 1rem;
+}
+
+.projectsColumn > .bigText{
+    margin-left: 0px;
+}
+
+.extraInfoColumn{
+    display: flex;
+}
+
+.boldText{
+    font-family: Roboto;
+    font-weight: 500;
+}
+.anouncementsContainer > p {
+    margin-top: 2rem;
+}
+.card{
+    background-color: white;
+    padding: 1rem;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    background-color: #E2E8F0;
+    gap: 1rem;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+}
+
+.cardSubtext{
+    font-family: Roboto;
+    font-weight: 400;
+}
