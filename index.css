@@ -12,7 +12,7 @@
 }
 .mainColumn{
     display: grid;
-    grid-template-rows: 1fr 3fr;
+    grid-template-rows: 0fr 3fr;
 }
 .firstActionRow{
     display: flex;
@@ -182,13 +182,14 @@ html,body{
     gap: 1.5rem;
     background-color: #E2E8F0;
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 4fr 1fr;
+    padding-bottom: 2rem;
 }
 
 
 .projectsColumn{
     display: grid;
-    grid-template-rows: 10% 90%;
+    grid-template-rows: 0fr 4fr;
     grid-template-columns: auto;
     padding-left: 1rem;
 }
@@ -199,6 +200,8 @@ html,body{
 
 .extraInfoColumn{
     display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
 }
 
 .boldText{
@@ -213,6 +216,7 @@ html,body{
     padding: 1rem;
     border: 1px solid white;
     border-radius: 5px;
+    box-shadow: 5px 5px 5px rgb(209, 209, 209);
 }
 
 .projects{
@@ -230,4 +234,75 @@ html,body{
 .cardSubtext{
     font-family: Roboto;
     font-weight: 400;
+}
+
+.anouncementsCard{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.title{
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.subtext{
+    font-family: Roboto;
+    font-weight: 400;
+}
+
+.anouncementsCard > hr {
+    color: rgb(233, 233, 233);
+}
+
+.ann2,.ann3{
+    padding-top: 0px;
+}
+.ann2{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.ann1{
+    padding-bottom: 0px;
+}
+
+.anouncements{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgb(204, 204, 204);
+    border: 1px solid white;
+}
+
+.trendingContainer{
+    margin-top: 2rem;
+}
+
+.trendings{
+    padding-left: 1rem;
+    background-color:white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgb(204, 204, 204);
+}
+
+.trendingCard{
+    display: flex;
+    align-items: center;
+    font-family: Roboto;
+    font-weight: 500;
+
+}
+
+.trendingCardText:first-child{
+    margin-bottom: 0px;
+    color: red;
+}
+
+.noMarginBottom{
+    margin-bottom: 3px;
+}
+
+.noMarginTop{
+    margin-top: 3px;
 }
